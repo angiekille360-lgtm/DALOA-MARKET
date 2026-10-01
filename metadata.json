@@ -1,0 +1,6 @@
+{
+  "name": "DALOA MARKET",
+  "description": "Marketplace #1 de Daloa, Côte d'Ivoire. Clone de Jumia pour Daloa avec commande rapide et livraison en 24h.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

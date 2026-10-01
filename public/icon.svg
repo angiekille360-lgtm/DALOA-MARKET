@@ -1,0 +1,59 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F5D2E"/>
+      <stop offset="100%" stop-color="#093d1e"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF842B"/>
+      <stop offset="100%" stop-color="#FF6B00"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background container with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle glow ring -->
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#22c55e" stroke-opacity="0.15" stroke-width="4"/>
+
+  <!-- Group for D shopping bag with shadow -->
+  <g filter="url(#shadow)" transform="translate(0, 10)">
+    <!-- Shopping bag handle: curved arch at the top -->
+    <path d="M 206 140 C 206 90, 306 90, 306 140" fill="none" stroke="#FF842B" stroke-width="26" stroke-linecap="round"/>
+
+    <!-- Stylized D-shaped shopping bag body -->
+    <!-- Left vertical bar with rounded tips -->
+    <rect x="136" y="140" width="44" height="230" rx="22" fill="url(#orangeGrad)"/>
+
+    <!-- D curve forming the bag body -->
+    <path d="M 166 140 
+             L 260 140 
+             C 365 140, 385 195, 385 255 
+             C 385 315, 365 370, 260 370 
+             L 166 370 
+             Z" 
+          fill="url(#orangeGrad)"/>
+
+    <!-- Inner cut-out forming the letter D hollow -->
+    <path d="M 216 186 
+             L 255 186 
+             C 315 186, 335 215, 335 255 
+             C 335 295, 315 324, 255 324 
+             L 216 324 
+             Z" 
+          fill="url(#bgGrad)"/>
+
+    <!-- Decorative shopping fold accent -->
+    <path d="M 260 215 L 290 255 L 260 295" fill="none" stroke="#FF842B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+
+    <!-- Small star tag / sparkle badge in white -->
+    <circle cx="340" cy="180" r="14" fill="#FFFFFF"/>
+    <path d="M 340 172 L 342.5 178 L 348 180 L 342.5 182 L 340 188 L 337.5 182 L 332 180 L 337.5 178 Z" fill="#FF6B00"/>
+  </g>
+
+  <!-- Tagline badge at bottom -->
+  <text x="256" y="440" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">DALOA</text>
+</svg>
